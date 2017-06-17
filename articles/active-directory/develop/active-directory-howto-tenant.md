@@ -63,7 +63,7 @@ Para hacerlo, siga estos pasos:  También es posible que quiera crear a un nuevo
 Si se ha registrado anteriormente en una suscripción de Azure con la cuenta organizativa, ya dispone de un inquilino.  En [Azure Portal](https://portal.azure.com) debe buscar un inquilino cuando navegue a "Más servicios" y "Azure Active Directory".  Pueden usar a este inquilino como considere oportuno.
 
 ## <a name="start-from-scratch"></a>Comienzo desde cero
-Si todo lo anterior es un galimatías para usted, no se preocupe.  Simplemente visite [https://account.windowsazure.com/organization](https://account.windowsazure.com/organization) para registrarse en Azure con una nueva organización.  Cuando haya completado el proceso, tendrá su propio inquilino de Azure AD con el nombre de dominio que elija durante el registro.  En [Azure Portal](https://portal.azure.com) puede buscar el inquilino navegando a "Azure Active Directory" en panel de la izquierda.
+Si todo lo anterior es un enredo para usted, no se preocupe.  Simplemente visite [https://account.windowsazure.com/organization](https://account.windowsazure.com/organization) para registrarse en Azure con una nueva organización.  Cuando haya completado el proceso, tendrá su propio inquilino de Azure AD con el nombre de dominio que elija durante el registro.  En [Azure Portal](https://portal.azure.com) puede buscar el inquilino navegando a "Azure Active Directory" en panel de la izquierda.
 
 Como parte del proceso de registro en Azure, se le solicitará que proporcione la información de tarjeta de crédito.  Puede continuar con confianza: no se le cobrará por publicar aplicaciones en Azure AD o crear nuevos inquilinos.
 
