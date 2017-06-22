@@ -63,18 +63,18 @@ Aunque los comandos de la CLI son los mismos independientemente de si se ejecuta
     ```azurecli
     #!/bin/bash
     
-    # Create a resource group.
+    # Crear un grupo de recursos.
     az group create \
       --name MyResourceGroup \
       --location eastus
     
-    # Create a virtual network with one subnet.
+    # Crear una red virtual con una subred.
     az network vnet create \
       --name MyVnet \
       --resource-group MyResourceGroup \
       --subnet-name Public
     
-    # Create an additional subnet within the VNet.
+    # Crear una subred adicional dentro de VNet.
     az network vnet subnet create \
       --name Private \
       --address-prefix 10.0.1.0/24 \
@@ -97,12 +97,12 @@ Aunque los comandos de la CLI son los mismos independientemente de si se ejecuta
 3. En la ventana de PowerShell, escriba el comando `login-azurermaccount` para iniciar sesión con su [cuenta](../azure-glossary-cloud-terminology.md?toc=%2fazure%2fvirtual-network%2ftoc.json#account) de Azure. Si aún no dispone de una cuenta, puede registrarse para obtener una [evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p).
 4. En su explorador, copie el siguiente script:
     ```powershell
-    # Create a resource group
+    # Crear un grupo de recursos.
     New-AzureRmResourceGroup `
       -Name MyResourceGroup `
       -Location eastus
     
-    # Create two subnets
+    # Crear dos subredes
     $Subnet1 = New-AzureRmVirtualNetworkSubnetConfig `
       -Name Public `
       -AddressPrefix 10.0.0.0/24
@@ -110,14 +110,14 @@ Aunque los comandos de la CLI son los mismos independientemente de si se ejecuta
       -Name Private `
       -AddressPrefix 10.0.1.0/24
     
-    # Create a virtual network
+    # Crear una red virtual
     $Vnet=New-AzureRmVirtualNetwork `
       -ResourceGroupName MyResourceGroup `
       -Location eastus `
       -Name MyVnet `
       -AddressPrefix 10.0.0.0/16 `
       -Subnet $Subnet1,$Subnet2
-    #
+    
     ```
 5. Para ejecutar el script, haga clic con el botón derecho en la ventana de PowerShell.
 6. Revise las subredes de la red virtual copiando el siguiente comando y pegándolo en la ventana de PowerShell:
